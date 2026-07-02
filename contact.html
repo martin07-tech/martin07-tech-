@@ -48,8 +48,16 @@
 
   <section style="border-top:none; padding-top:2vh;">
     <div class="spec-label">Send a message</div>
-    <p class="section-sub">This form isn't wired to a server yet — connect it to your email service or backend of choice to start receiving enquiries.</p>
-    <form id="contact-form" class="tb-grid" style="grid-template-columns:1fr;">
+    <p class="section-sub">Fill this in and it'll land straight in your inbox.</p>
+    <!--
+      FORMSPREE SETUP (one-time):
+      1. Go to https://formspree.io and sign up free with neztech07@gmail.com
+      2. Create a new form, name it e.g. "Martin07 Tech — Contact"
+      3. Copy the endpoint it gives you, looks like: https://formspree.io/f/abcdwxyz
+      4. Paste it into the action="" attribute below, replacing YOUR_FORM_ID
+      5. Submit the form once live — Formspree sends a confirmation email you must click to activate it
+    -->
+    <form id="contact-form" class="tb-grid" style="grid-template-columns:1fr;" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
       <div class="contact-form">
         <div>
           <label for="name">Name</label>
