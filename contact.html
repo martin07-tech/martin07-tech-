@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Martin07 Tech</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="bp-grid"></div>
+<main>
+
+  <header>
+    <a class="logo" href="index.html"><span class="logo-mark"></span>MARTIN07 TECH</a>
+    <div class="nav-links">
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="packages.html">Packages</a>
+        <a href="addons.html">Add-ons</a>
+        <a href="timeline.html">Timeline</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="titleblock" style="border-top:none;">
+    <div class="spec-label">Spec 04 — Contact</div>
+    <div class="tb-grid">
+      <div class="tb-left">
+        <h2>Let's build your site.</h2>
+        <p>Tell us what you need and we'll recommend the right package — no obligation.</p>
+        <div class="contact-row">
+          <div>📞 <a href="tel:0603525772">060 352 5772</a></div>
+          <div>✉️ <a href="mailto:neztech07@gmail.com">neztech07@gmail.com</a></div>
+          <div>💬 <a href="https://wa.me/27603525772" target="_blank" rel="noopener">WhatsApp us directly</a></div>
+        </div>
+      </div>
+      <div class="tb-right">
+        <div class="tb-field"><div class="k">Drawn by</div><div class="v">Martin07 Tech</div></div>
+        <div class="tb-field"><div class="k">Sheet</div><div class="v">Pricing / 2026</div></div>
+        <div class="tb-field"><div class="k">Scale</div><div class="v">R3,000–R12,000+</div></div>
+        <div class="tb-field"><div class="k">Revision</div><div class="v">01</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section style="border-top:none; padding-top:2vh;">
+    <div class="spec-label">Send a message</div>
+    <p class="section-sub">This form isn't wired to a server yet — connect it to your email service or backend of choice to start receiving enquiries.</p>
+    <form id="contact-form" class="tb-grid" style="grid-template-columns:1fr;">
+      <div class="contact-form">
+        <div>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+          <label for="package">Package you're interested in</label>
+          <select id="package" name="package">
+            <option>Basic Website — R3,000</option>
+            <option>Standard Website — R5,500</option>
+            <option>Business Website — R8,000</option>
+            <option>E-commerce Website — From R12,000</option>
+            <option>Not sure yet</option>
+          </select>
+        </div>
+        <div>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Tell us a bit about your business and what you need..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-solid" style="align-self:flex-start;">Send message</button>
+        <div id="form-status" class="form-status"></div>
+      </div>
+    </form>
+  </section>
+
+  <div class="page-links">
+    <a href="timeline.html">← Timeline</a>
+    <a href="index.html">Home →</a>
+  </div>
+
+  <footer>© 2026 Martin07 Tech. All prices in ZAR, exclude domain &amp; hosting unless stated.</footer>
+
+</main>
+<script src="script.js"></script>
+</body>
+</html>
